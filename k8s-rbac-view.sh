@@ -35,5 +35,6 @@ main (){
 	[[ -s "${d}" ]] && append "No client key detected" || append "${d}"
     done
     endwin        
+} 
 
 main_loop 0.5
