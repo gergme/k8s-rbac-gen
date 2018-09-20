@@ -17,7 +17,7 @@ main (){
     for a in ${K8S_USERS[@]}; do
 	for b in ${K8S_AUTH_PW[@]}; do
 	
-	[[ "${a}" == "null" ]] && append "No username/password auth detected" || append "${a} ${b}"
+	[[ "${a}" == "null" ]] && append "No username/password auth detected" || append "Auth User: ${a}"; append "Auth Passwd: ${b}"
     	done
     done
     endwin
