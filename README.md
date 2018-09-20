@@ -1,2 +1,3 @@
-# k8s-rbac-gen
-Kubernetes RBAC Editor/Generator
+## Optimis RBAC Tools
+#####k8s-rbac-view.sh
+Quickly view authentication methods.
