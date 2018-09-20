@@ -38,19 +38,7 @@ main (){
     done
     endwin        
 
-debug
 } 
-
-debug() {
-K8S_USERS_size=${#K8S_USERS}
-K8S_AUTH_PW_size=${#K8S_AUTH_PW}
-K8S_CERT_size=${#K8S_CERT}
-K8S_KEY_size=${#K8S_KEY}
-printf "K8S_USERS = ${K8S_USERS_size}\n"
-printf "K8S_AUTH_PW = ${K8S_AUTH_PW_size}\n"
-printf "K8S_CERT = ${K8S_CERT_size}\n"
-printf "K8S_KEY = ${K8S_KEY_size}\n"
-}
 
 main_loop 0.5
 
