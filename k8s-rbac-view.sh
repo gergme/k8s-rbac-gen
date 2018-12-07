@@ -5,7 +5,7 @@
 
 # Main function
 main (){
-    window "OptimisCorp Kubernetes RBAC Viewer" "green"
+    window "Kubernetes RBAC Viewer" "green"
     append "`date`"
     addsep
     append "Context: `kubectl config current-context`" 
