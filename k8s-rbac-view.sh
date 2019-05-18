@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Check for required software
+check_required(){
+	command -v jq >/dev/null 2>&1 || { echo >&2 "I require jq but it's not installed.  Aborting."; exit 1; }
+}
+
 # Import helper
 . ./inc/simple_curses.sh
 
@@ -40,6 +45,7 @@ main (){
 
 } 
 
+check_required
 main_loop 0.5
 
 
